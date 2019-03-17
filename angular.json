@@ -75,6 +75,18 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "development": {
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": true,
+              "aot": false,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "commonChunk": true,
+              "buildOptimizer": false
             }
           }
         },
@@ -85,6 +97,9 @@
           },
           "configurations": {
             "production": {
+              "browserTarget": "angular-flexgrid:build:production"
+            },
+            "development": {
               "browserTarget": "angular-flexgrid:build:production"
             }
           }
