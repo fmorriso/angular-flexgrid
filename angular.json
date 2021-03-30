@@ -55,6 +55,17 @@
             "scripts": []
           },
           "configurations": {
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "commonChunk": true,
+              "buildOptimizer": false,
+              "progress": true,
+              "watch": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -92,6 +103,9 @@
             "browserTarget": "angular-flexgrid:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "angular-flexgrid:build:development"
+            },
             "production": {
               "browserTarget": "angular-flexgrid:build:production"
             }
