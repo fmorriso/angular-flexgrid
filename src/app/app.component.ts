@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {AngularVersionInformationService} from './shared/angular-version-information.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +6,7 @@ import {AngularVersionInformationService} from './shared/angular-version-informa
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-flexgrid';
-  angularVersion: string;
-  constructor(ngVersion: AngularVersionInformationService) {
-    this.angularVersion = ngVersion.versionFull;
-  }
+  
+
+  constructor() { }
 }
