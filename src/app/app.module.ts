@@ -7,10 +7,11 @@ import { CustomMaterialModule } from './shared/custom-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { AboutMaterialComponent } from './about-material/about-material.component';
 
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent],
+  declarations: [AppComponent, AboutComponent, AboutMaterialComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
