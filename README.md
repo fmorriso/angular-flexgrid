@@ -1,7 +1,15 @@
 # AngularFlexgrid
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
-Updated to Angular 11.x in March 2021
+
+- Updated to Angular 11.x in March 2021
+- Updated to Angular 12.x in August 2021
+
+## Purpose
+
+My attempt to use CSS Flexgrid without a lot of custom SCSS/CSS plus Angular Material
+
+See the About component for more information.
 
 ## References
 
