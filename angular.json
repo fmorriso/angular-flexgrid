@@ -22,8 +22,7 @@
         "@schematics/angular:interceptor": {
           "skipTests": true
         },
-        "@schematics/angular:module": {
-        },
+        "@schematics/angular:module": {},
         "@schematics/angular:pipe": {
           "skipTests": true
         },
@@ -54,16 +53,20 @@
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "sourceMap": false,
+            "namedChunks": false,
+            "progress": true,
+            "commonChunk": true,
+            "watch": false
           },
           "configurations": {
             "development": {
+              "buildOptimizer": false,
               "extractLicenses": true,
-              "commonChunk": true,
-              "progress": true,
+              "namedChunks": true,
+              "optimization": false,
+              "outputHashing":"none",
+              "sourceMap": true,
               "watch": true
             },
             "production": {
@@ -74,13 +77,8 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "commonChunk": true,
               "buildOptimizer": true,
-              "progress": true,
+              "outputHashing": "bundles",
               "budgets": [
                 {
                   "type": "initial",
@@ -92,10 +90,11 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "watch": false
             }
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
