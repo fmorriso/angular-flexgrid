@@ -5,17 +5,17 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'about' }
+  { path: '', pathMatch: 'full', redirectTo: 'about' },
 ];
 
 const routeOptions: ExtraOptions = {
   enableTracing: true,
   useHash: false,
-  relativeLinkResolution: 'corrected'
-}
+  relativeLinkResolution: 'corrected',
+};
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routeOptions)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

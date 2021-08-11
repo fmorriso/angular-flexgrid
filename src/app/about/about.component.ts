@@ -10,13 +10,13 @@ import { AngularVersionInformationService } from '../shared/angular-version-info
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  public get angularVersion(): string {
+  get angularVersion(): string {
     return this.ngVersion.versionFull;
   }
-  public get title(): string {
+  get title(): string {
     return 'angular-flexgrid';
   }
-  public get materialVersion(): string {
+  get materialVersion(): string {
     return matVersion.full;
   }
 
