@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NG_VALIDATORS } from '@angular/forms';
+import { VERSION as matVersion} from '@angular/material/core';
 //
 import { AngularVersionInformationService } from '../shared/angular-version-information.service';
 
@@ -14,6 +15,9 @@ export class AboutComponent implements OnInit {
   }
   public get title(): string {
     return 'angular-flexgrid';
+  }
+  public get materialVersion(): string {
+    return matVersion.full;
   }
 
   constructor(public ngVersion: AngularVersionInformationService) {}
