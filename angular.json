@@ -65,7 +65,7 @@
               "extractLicenses": true,
               "namedChunks": true,
               "optimization": false,
-              "outputHashing":"none",
+              "outputHashing": "none",
               "sourceMap": true,
               "watch": true
             },
@@ -108,7 +108,8 @@
             "production": {
               "browserTarget": "angular-flexgrid:build:production"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
