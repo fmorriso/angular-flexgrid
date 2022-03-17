@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Updated to Angular 11.x in March 2021
 - Updated to Angular 12.x in August 2021
+- Updated to Angular 13.x in March 2022
 
 ## Purpose
 
